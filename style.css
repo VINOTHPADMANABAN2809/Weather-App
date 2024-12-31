@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-image:none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 120%;
+  color: #ffffff;
+}
+
+.card {
+  background: linear-gradient(135deg, #00008b, #800080);
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5em 1.5em;
+  border-radius: 24px;
+  background: black;
+  color:white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 60px);
+}
+
+input.search-bar::placeholder {
+  color: #cccccc;
+}
+
+input.search-bar:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+button {
+  margin-left: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: rgba(124, 124, 124, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background: rgba(124, 124, 124, 0.4);
+  transform: scale(1.1);
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 1.2rem;
+}
+
+.flex-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f1f1f1;
+}
+
+.icon-item svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgba(33, 37, 41, 0.9);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer h4 {
+  color: white;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
